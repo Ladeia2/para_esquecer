@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center_logo{
+
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #ccc;
+    
+}
+.center{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+header{
+    
+    padding: 0 2%;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(16, 16, 151);
+}
+
+header .center img{
+    width: 100px;
+    margin: 10px;
+}
+
+.container-banner{
+    padding: 0 2%;
+    width: 100%;
+    height: 557px;
+    background-image: url("../img/header_bg.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container-banner > .center{
+    height: 100%;
+    
+}
+
+.form{
+    
+    padding: 20px;
+    width: 400px;
+    height: calc(100% + 30px); /* quando colocar para pegar o em possentagem, precisa informar o antecedente.. exemplo container-banner center expecificando que é 100% */
+    background-color: rgb(180, 194, 206);
+    float: right; /* para colocar o formulário na direita. outra forma é colocar display, inlaine-block, voltar me container-banner>center e colocar text-align: right. */
+    position: relative;  /* Usando relativo, podemos move ele de acordo com o elemento pai, nesse caso formulario está contido em container baneer e depois dentro de center, selecionado posso subir e descer dentro da div pai que containner-banner */
+    top: 110px;
+    border: 8px double   rgb(26, 34, 151);
+
+}
+
+
+
+.form1{
+    
+    padding: 20px;
+    width: 400px;
+    height: calc(100% + 30px); /* quando colocar para pegar o em possentagem, precisa informar o antecedente.. exemplo container-banner center expecificando que é 100% */
+    background-color: rgb(180, 194, 206);
+    margin: auto; /* para colocar o formulário na direita. outra forma é colocar display, inlaine-block, voltar me container-banner>center e colocar text-align: right. */
+     /* Usando relativo, podemos move ele de acordo com o elemento pai, nesse caso formulario está contido em container baneer e depois dentro de center, selecionado posso subir e descer dentro da div pai que containner-banner */
+    
+    border: 8px double   rgb(26, 34, 151);
+    margin-bottom: 50px;
+
+}
+
+.form1 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container span,.form p{
+    display: inline-block;
+    width: 100%;
+    color: rgba(15, 23, 128, 0.6);
+    font-size: 17px;
+}
+
+.input-container input[type=text]{
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+.form p {
+    margin: 20px 0;
+    text-align: center;
+    color: rgb(194, 103, 28);
+    font-size: 20px;
+}
+.form1 p {
+    margin: 20px 0;
+    text-align: center;
+    color: rgb(194, 103, 28);
+    font-size: 20px;
+}
+
+/* para centralizar o botão de enviar, precisa colocar outra div. */
+.form .input-container-submit{
+    text-align: center;
+} 
+
+.form1 .input-container-submit{
+    text-align: center;
+} 
+
+
+.input-container-submit .button {
+    border: 0;
+    color: aliceblue;
+    font-size: 30px;
+    width: 280px;
+    height: 56px;
+    display: inline-block;
+    background-color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.input-container-submit .button:hover {
+    background-color: rgb(54, 17, 124);
+}
+
+
+.container-list{
+    padding: 40px;
+    margin-top: 50px;
+    float: left;
+    width: 700px;
+    height: 400px;
+    background-color:  rgba(15, 23, 128, 0.6);
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list ul li{
+    margin-top: 20px;
+    color: white;
+}
+
+.container-2{
+    
+    padding: 30px 2%;
+    background-color: rgb(180, 194, 206);
+    text-align: center;
+}
+
+.container-2 h2{
+    font-weight: normal;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.container-2 p{
+    width: 100%;
+    max-width: 768px;
+    display: inline-block;
+    text-align: justify;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.simbolo{
+    /* Para colocar no centro, usar a poisção relativa, que usa em consideração movimentaçaõ ao pai. */
+    position: relative;
+    top: 50px;
+    margin-left: -10px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(/Projeto01/img/arrow.png);
+    background-size: 100% 100%;
+}
+
+.section-01{
+    padding: 90px 2%;
+   
+}
+
+.section-01 h2{
+    text-align: center;
+}
+
+.container-section{
+    display: flex; /* Aplica o layout flexível */
+    justify-content: center; /* Centraliza no eixo horizontal */
+    align-items: center;
+}
+
+.container-single{ 
+   display: block;
+   align-items: center;
+   justify-content: center;
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+    
+}
+.clear{
+    clear: both; /* quando crio um float, o elemento fica flutuando, entÃ£o qualquer elemento que colocar ele, fica em cima do elemento que apliquei float. (alinhar ) .. criamos uma div sega e chamaos ela no css clear both .. damos continuidade. podendo clear ser usado dentro do prosimo elemento ... mas dessa maneira de  div sega Ã© mais ideal se precisar trocar fundo de cor.*/
+}
+.text-container-single p {
+    padding: 20px 30px;
+    text-align: justify;
+}
+
+
+footer{
+    /* clear: both; */
+    padding: 20px 0;
+    border-top: 2px solid green;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    
+    header {
+        height: auto;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .center_logo h1 {
+        font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    header .center img {
+        margin: 0;
+        width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    }
+
+    .container-list {
+        padding: 0;
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        max-width: 415px;
+        height: auto;
+    }
+
+    .container-banner {
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form .form1 {
+        margin-top: 20px;
+        max-width: 415px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        float: none;
+        top: 0;
+    }
+
+    .container-single {
+        display: inline-block;
+        width: 80%;
+        max-width: 500px;
+        padding: 30px 10px;
+        text-align: center;
+    }
+
+    .text-container-single p {
+        padding: 10px;
+        font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
